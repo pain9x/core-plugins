@@ -128,7 +128,7 @@ class LDAPAuthentication {
         if ($connection && !$force_reconnect)
             return $connection;
 
-        require_once('include/Net/LDAP2.php');
+        require_once('INCLUDE_DIR./Net/LDAP2.php');
         // Set reasonable timeout limits
         $defaults = array(
             'options' => array(
